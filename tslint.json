@@ -1,0 +1,36 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js",
+      "src/**/**/*.tsx",
+      "src/**/**/*.ts",
+      "src/**/*.tsx",
+      "src/*.tsx"
+    ]
+  },
+  
+    "member-ordering": [true,
+      "public-before-private",
+      "static-before-instance",
+      "variables-before-functions"  
+    ],
+
+  "rules":{
+    "member-access": false,
+    "max-classes-per-file": false,
+    "jsx-no-lambda":false,
+    "object-literal-shorthand": [true, "never"],
+    "object-shorthand": ["error", "always"],
+    "prefer-for-of" : false,
+    "interface-over-type-literal": false,
+    "jsx-no-multiline-js": false,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "jsx-double"]
+  
+  }
+}
